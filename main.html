@@ -19,126 +19,77 @@
                 <h1>MatkortsMonopol</h1>
             </div>
             <div class="players">
-                <div>jonas</div>
-                <div>peter</div>
+                <div>
+                    <form onsubmit="return createPlayer1()" player id="player1">
+                        Spelare 1 namn: <input type="text" id="name1" size="20" name="name1">
+                        <input type="radio" id="piece1" name="piece1" value="Teknikare">
+                        <label for="pice1">Teknikare</label>
+                        <input type="radio" id="piece2" name="piece1" value="Estetare">
+                        <label for="pice2">Estetare</label>
+                        <input type="radio" id="piece3" name="piece1" value="El och energi-are">
+                        <label for="pice3">El och energi-are</label>
+                        <input type="radio" id="piece4" name="piece1" value="Källargrabb">
+                        <label for="pice4">Källargrabb(INIT)</label>
+                        <input type="submit" value="Välj" >
+                    </form>
+                </div>
+                <div>                    
+                    <form onsubmit="return createPlayer2()" player id="player2">
+                    Spelare 2 namn: <input type="text" id="name2" size="20" name="name1">
+                    <input type="radio" id="piece21" name="piece2" value="Teknikare">
+                    <label for="pice21">Teknikare</label>
+                    <input type="radio" id="piece22" name="piece2" value="Estetare">
+                    <label for="pice22">Estetare</label>
+                    <input type="radio" id="piece23" name="piece2" value="El och energi-are">
+                    <label for="pice23">El och energi-are</label>
+                    <input type="radio" id="piece24" name="piece2" value="Källargrabb">
+                    <label for="pice24">Källargrabb(INIT)</label>
+                    <input type="submit" value="Välj" >
+                    </form>
+                    <p id="free"></p>
+                </div>
             </div>
         </div>
         <div class="tileb" id="b1">
             <h2>Gratis</h2>
             <h2>Parkering</h2>
         </div>
-        <div class="row" id="r1">
-            <div class="tile">
-                <h3></h3>
-                <h4></h4>
-            </div>
-            <div class="tile">
-                <h3></h3>
-                <h4></h4>
-            </div>                                 
-            <div class="tile">
-                <h3></h3>
-                <h4></h4>
-            </div> 
-            <div class="tile">
-                <h3></h3>
-                <h4></h4>
-            </div>  
-            <div class="tile">
-                <h3></h3>
-                <h4></h4>
-            </div>                          
-            <div class="tile">
-                <h3></h3>
-                <h4></h4>
-            </div>  
-            <div class="tile">
-                <h3></h3>
-                <h4></h4>
-            </div>                          
-            <div class="tile">
-                <h3></h3>
-                <h4></h4>
-            </div>  
-            <div class="tile">
-                <h3></h3>
-                <h4></h4>
-            </div>                            
-        </div>
-        <div class="row" id="r2">
-
-            <div class="tile">
-                <h3></h3>
-                <h4></h4>
-            </div>                                 
-            <div class="tile">
-                <h3></h3>
-                <h4></h4>
-            </div> 
-            <div class="tile">
-                <h3></h3>
-                <h4></h4>
-            </div>  
-            <div class="tile">
-                <h3></h3>
-                <h4></h4>
-            </div>                          
-            <div class="tile">
-                <h3></h3>
-                <h4></h4>
-            </div>  
-            <div class="tile">
-                <h3></h3>
-                <h4></h4>
-            </div>                          
-            <div class="tile">
-                <h3></h3>
-                <h4></h4>
-            </div>  
-            <div class="tile">
-                <h3></h3>
-                <h4></h4>
-            </div>                          
-            <div class="tile">
-                <h3></h3>
-                <h4></h4>
-            </div>
-        </div>
         <div class="tileb" id="b2">
             <h2>Gratis</h2>
             <h2>Parkering</h2>
         </div>
+        
         <div class="row" id="r3">
 
-            <div class="tile">
+            <div class="tile" id="t34">
                 <h3></h3>
                 <h4></h4>
             </div>
-            <div class="tile">
+            <div class="tile" id="t33">
                 <h3></h3>
                 <h4></h4>
             </div>                                 
-            <div class="tile">
+            <div class="tile" id="t32">
                 <h3></h3>
                 <h4></h4>
             </div> 
-            <div class="tile">
+            <div class="tile" id="t31">
                 <h3></h3>
                 <h4></h4>
             </div>  
-            <div class="tile">
+            <div class="tile" id="t30">
                 <h3></h3>
                 <h4></h4>
             </div>                          
-            <div class="tile">
+            <div class="tile" id="t29">
                 <h3></h3>
                 <h4></h4>
             </div>  
-            <div class="tile">
+            <div class="tile" id="t28">
                 <h3></h3>
                 <h4></h4>
             </div>                          
-            <div class="tile">
+            <div class="tile" id="t27">
                 <h3></h3>
                 <h4></h4>
             </div>  
@@ -147,44 +98,121 @@
                 <h4>5000 mk</h4>
             </div>                       
         </div>
+        <div class="row" id="r2">
+
+            <div class="tile" id="t26">
+                <h3></h3>
+                <h4></h4>
+            </div>                                 
+            <div class="tile" id="t25">
+                <h3></h3>
+                <h4></h4>
+            </div> 
+            <div class="tile" id="t24">
+                <h3></h3>
+                <h4></h4>
+            </div>  
+            <div class="tile" id="t23">
+                <h3></h3>
+                <h4></h4>
+            </div>                          
+            <div class="tile" id="t22">
+                <h3></h3>
+                <h4></h4>
+            </div>  
+            <div class="tile" id="t21">
+                <h3></h3>
+                <h4></h4>
+            </div>                          
+            <div class="tile" id="t20">
+                <h3></h3>
+                <h4></h4>
+            </div>  
+            <div class="tile" id="t19">
+                <h3></h3>
+                <h4></h4>
+            </div>                          
+            <div class="tile" id="t18">
+                <h3></h3>
+                <h4></h4>
+            </div>
+        </div>
         <div class="tileb" id="b3">
             <h2>Gratis</h2>
             <h2>Parkering</h2>
-        </div>   
-        <div class="row" id="r4">
+        </div>
+        <div class="row" id="r1">
             <div class="tile">
                 <h3></h3>
                 <h4></h4>
             </div>
-            <div class="tile">
+            <div class="tile" id="t17">
                 <h3></h3>
                 <h4></h4>
             </div>                                 
-            <div class="tile">
+            <div class="tile" id="t16">
                 <h3></h3>
                 <h4></h4>
             </div> 
-            <div class="tile">
+            <div class="tile" id="t15">
                 <h3></h3>
                 <h4></h4>
             </div>  
-            <div class="tile">
+            <div class="tile" id="t14">
                 <h3></h3>
                 <h4></h4>
             </div>                          
-            <div class="tile">
+            <div class="tile" id="t13">
                 <h3></h3>
                 <h4></h4>
             </div>  
-            <div class="tile">
+            <div class="tile" id="t12">
                 <h3></h3>
                 <h4></h4>
             </div>                          
-            <div class="tile">
+            <div class="tile" id="t11">
                 <h3></h3>
                 <h4></h4>
             </div>  
-            <div class="tile">
+            <div class="tile" id="t10">
+                <h3></h3>
+                <h4></h4>
+            </div>                            
+        </div>
+        <div class="row" id="r4">
+            <div class="tile" id="t9">
+                <h3></h3>
+                <h4></h4>
+            </div>
+            <div class="tile" id="t8">
+                <h3></h3>
+                <h4></h4>
+            </div>                                 
+            <div class="tile" id="t7">
+                <h3></h3>
+                <h4></h4>
+            </div> 
+            <div class="tile" id="t6">
+                <h3></h3>
+                <h4></h4>
+            </div>  
+            <div class="tile" id="t5">
+                <h3></h3>
+                <h4></h4>
+            </div>                       
+            <div class="tile" id="t4">
+                <h3></h3>
+                <h4></h4>
+            </div>   
+            <div class="tile" id="t3">
+                <h3></h3>
+                <h4></h4>
+            </div>                          
+            <div class="tile" id="t2">
+                <h3></h3>
+                <h4></h4>
+            </div>  
+            <div class="tile" id="t1">
                 <h3></h3>
                 <h4></h4>
             </div>                          

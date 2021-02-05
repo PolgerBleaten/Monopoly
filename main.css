@@ -13,6 +13,10 @@ main {
   grid-template-columns: 130px repeat(9, 90px) 130px;
   grid-template-rows: 130px repeat(9, 90px) 130px;
 }
+form {
+  display: flex;
+  flex-direction: column;
+}
 .center {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
