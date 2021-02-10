@@ -9,7 +9,7 @@ document.querySelectorAll("[player]").forEach(item => {
     })
   })
 var Player1 = ["", 550, "", 0];
-var Player2 = ["", 550,"",0];
+var Player2 = ["", 550, "", 0];
 let turn = 0;
 DiceButton.addEventListener("click", rollDice);
 function rollDice(){
@@ -70,6 +70,22 @@ function createPlayer(person){
     }
     if (ready == 2){
         DiceButton.style.display = "initial";
+    }
+}
+function buyStreet(turn, tile){
+    if (tile%10 == 0 || tile == 3 || tile == 5 || tile == 12 || tile == 17 || tile == 19 || tile == 23 || tile == 28 || tile == 32 || tile == 36 || tile == 38)
+    {
+
+    }
+    else{
+        if(tile > 12){
+            var pricetile = document.querySelectorAll(".pay");
+            for(var i=0; i < pricetile.length; i++){
+                if(pricetile[i].length() > 5){
+                    
+                }
+            }
+        }
     }
 }
 //function 
