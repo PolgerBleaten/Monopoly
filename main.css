@@ -6,6 +6,12 @@ body {
 }
 h3 {
 }
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 main {
   display: grid;
   height: 1070px;
@@ -31,7 +37,7 @@ form {
 .players {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .row {
   display: grid;

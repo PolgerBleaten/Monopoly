@@ -14,39 +14,51 @@
             <div class="name">
                 <button data-rolldicebutton>Rulla tärningen!</button>
                 <h1 id="dice"></h1>
+                <h1 id="round"></h1>
             </div>
             <div class="name">            
                 <h1>MatkortsMonopol</h1>
             </div>
             <div class="players">
                 <div>
-                    <form onsubmit="return createPlayer1()" player id="player1">
+                    <form onsubmit="return createPlayer(1)" player id="player1">
                         Spelare 1 namn: <input type="text" id="name1" size="20" name="name1">
-                        <input type="radio" id="piece1" name="piece1" value="Teknikare">
                         <label for="pice1">Teknikare</label>
-                        <input type="radio" id="piece2" name="piece1" value="Estetare">
+                        <input type="radio" id="piece1" name="piece1" value="Teknikare">
                         <label for="pice2">Estetare</label>
-                        <input type="radio" id="piece3" name="piece1" value="El och energi-are">
+                        <input type="radio" id="piece2" name="piece1" value="Estetare">
                         <label for="pice3">El och energi-are</label>
-                        <input type="radio" id="piece4" name="piece1" value="Källargrabb">
+                        <input type="radio" id="piece3" name="piece1" value="El och energi-are">
                         <label for="pice4">Källargrabb(INIT)</label>
+                        <input type="radio" id="piece4" name="piece1" value="Källargrabb">
                         <input type="submit" value="Välj" >
                     </form>
+                    <div class="player">
+                        <h2 id="Name1"></h2>
+                        <h3 id="Piece1"></h3>
+                        <h3 id="Money1"></h3>
+                        <h3 id="Steps1"></h3>
+                    </div>
                 </div>
-                <div>                    
-                    <form onsubmit="return createPlayer2()" player id="player2">
+                <div>               
+                    <form onsubmit="return createPlayer(2)" player id="player2">
                     Spelare 2 namn: <input type="text" id="name2" size="20" name="name1">
-                    <input type="radio" id="piece21" name="piece2" value="Teknikare">
                     <label for="pice21">Teknikare</label>
-                    <input type="radio" id="piece22" name="piece2" value="Estetare">
+                    <input type="radio" id="piece21" name="piece2" value="Teknikare">
                     <label for="pice22">Estetare</label>
-                    <input type="radio" id="piece23" name="piece2" value="El och energi-are">
+                    <input type="radio" id="piece22" name="piece2" value="Estetare">
                     <label for="pice23">El och energi-are</label>
-                    <input type="radio" id="piece24" name="piece2" value="Källargrabb">
+                    <input type="radio" id="piece23" name="piece2" value="El och energi-are">
                     <label for="pice24">Källargrabb(INIT)</label>
+                    <input type="radio" id="piece24" name="piece2" value="Källargrabb">
                     <input type="submit" value="Välj" >
                     </form>
-                    <p id="free"></p>
+                    <div class="player">
+                        <h2 id="Name2"></h2>
+                        <h3 id="Piece2"></h3>
+                        <h3 id="Money2"></h3>
+                        <h3 id="Steps2"></h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,7 +72,14 @@
         </div>
         
         <div class="row" id="r3">
-
+            <div class="tile" id="t36">
+                <h3></h3>
+                <h4></h4>
+            </div>
+            <div class="tile" id="t35">
+                <h3>la grande</h3>
+                <h4>5000 mk</h4>
+            </div>   
             <div class="tile" id="t34">
                 <h3></h3>
                 <h4></h4>
@@ -89,17 +108,13 @@
                 <h3></h3>
                 <h4></h4>
             </div>                          
+                      
+        </div>
+        <div class="row" id="r2">
             <div class="tile" id="t27">
                 <h3></h3>
                 <h4></h4>
-            </div>  
-            <div class="tile">
-                <h3>la grande</h3>
-                <h4>5000 mk</h4>
-            </div>                       
-        </div>
-        <div class="row" id="r2">
-
+            </div>
             <div class="tile" id="t26">
                 <h3></h3>
                 <h4></h4>
@@ -132,20 +147,16 @@
                 <h3></h3>
                 <h4></h4>
             </div>                          
-            <div class="tile" id="t18">
-                <h3></h3>
-                <h4></h4>
-            </div>
         </div>
         <div class="tileb" id="b3">
             <h2>Gratis</h2>
             <h2>Parkering</h2>
         </div>
         <div class="row" id="r1">
-            <div class="tile">
+            <div class="tile" id="t18">
                 <h3></h3>
                 <h4></h4>
-            </div>
+            </div>      
             <div class="tile" id="t17">
                 <h3></h3>
                 <h4></h4>
