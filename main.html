@@ -11,10 +11,19 @@
     <header></header>
     <main>
         <div class="center">
-            <div class="name">
-                <button data-rolldicebutton>Rulla tärningen!</button>
-                <h1 id="dice"></h1>
-                <h1 id="round"></h1>
+            <div class="info">
+                <div class="dice">
+                    <button data-rolldicebutton>Rulla tärningen!</button>
+                    <div></div>
+                </div>
+                <div class="name">
+                    <h2 id="playerinfo"></h2>
+                    <button data-buystreetbutton>Köp!</button>
+                    <button data-donotbuystreetbutton>Köp inte!</button>
+                    <h2 id="dice"></h2>
+                    <h2 id="round"></h2>
+                    <h2 id="tilevalue"></h2>
+                </div>
             </div>
             <div class="name">            
                 <h1>MatkortsMonopol</h1>
@@ -71,80 +80,80 @@
             <h2>Parkering</h2>
         </div>
         <div class="row" id="r3">
-            <div class="tile" id="t28">
-                <h4 class="pay">270 mk</h4>
-                <h3>Spice city</h3>
+            <div class="tile">
+                <h4 class="pay" id="t31">270 mk</h4>
+                <h3 id="n31">Spice city</h3>
             </div>      
-            <div class="tile" id="t29">
+            <div class="tile">
                 <h4>Elevrådet</h4>
                 <h3>Beslut av</h3>
             </div>
-            <div class="tile" id="t30">
-                <h4 class="pay">290 mk</h4>
-                <h3>Aroti</h3>
+            <div class="tile">
+                <h4 class="pay" id="t33">290 mk</h4>
+                <h3 id="n33">Aroti</h3>
             </div>   
-            <div class="tile" id="t31">
-                <h4 class="pay">300 mk</h4>
-                <h3>Taco bar</h3>
+            <div class="tile">
+                <h4 class="pay" id="t34">300 mk</h4>
+                <h3 id="n34">Taco bar</h3>
             </div>
-            <div class="tile" id="t32">
-                <h4 class="pay">100 mk</h4>
-                <h3>Busstation St:eriksplan</h3>
+            <div class="tile">
+                <h4 class="pay" id="t35">100 mk</h4>
+                <h3 id="n35">Busstation St:eriksplan</h3>
             </div>                                 
-            <div class="tile" id="t33">
-                <h4 class="pay"></h4>
+            <div class="tile">
+                <h4 class="pay" id="t36"></h4>
                 <h3>Studiedag</h3>
             </div> 
-            <div class="tile" id="t34">
-                <h4 class="pay">360 mk</h4>
-                <h3>Hemköp</h3>
+            <div class="tile">
+                <h4 class="pay" id="t37">360 mk</h4>
+                <h3 id="n37">Hemköp</h3>
             </div>  
-            <div class="tile" id="t35">
-                <h3 class="pay">Betala 100 mk</h3>
+            <div class="tile">
+                <h3 class="pay" id="t38">Betala 100 mk</h3>
                 <h3>Efter kl 13.15</h3>
             </div>                          
-            <div class="tile" id="t36">
-                <h4 class="pay">400 mk</h4>
-                <h3>ICA</h3>
+            <div class="tile">
+                <h4 class="pay" id="t39">400 mk</h4>
+                <h3 id="n39">ICA</h3>
             </div>                      
                       
         </div>
         <div class="row" id="r2">
-            <div class="tile" id="t19">
-                <h3>Coco café</h3>
-                <h4 class="pay">150 mk</h4>
+            <div class="tile">
+                <h3 id="n21">Coco café</h3>
+                <h4 class="pay" id="t21">150 mk</h4>
             </div> 
-            <div class="tile" id="t20">
-                <h3>Sus</h3>
-                <h4 class="pay">160 mk</h4>
+            <div class="tile">
+                <h3 id="n22">Sus café</h3>
+                <h4 class="pay" id="t22">160 mk</h4>
             </div>
-            <div class="tile" id="t21">
-                <h3>Studiedag</h3>
+            <div class="tile">
+                <h3 id="t23">Studiedag</h3>
                 <p></p>
             </div>                                 
-            <div class="tile" id="t22">
-                <h3>Konditoriet</h3>
-                <h4 class="pay">170 mk</h4>
+            <div class="tile">
+                <h3 id="n24">Konditoriet</h3>
+                <h4 class="pay" id="t24">170 mk</h4>
             </div> 
-            <div class="tile" id="t23">
-                <h3>Busstation Observatorieg.</h3>
-                <h4 class="pay">100 mk</h4>
+            <div class="tile">
+                <h3 id="n25">Busstation Observatorieg.</h3>
+                <h4 class="pay" id="t25">100 mk</h4>
             </div>  
-            <div class="tile" id="t24">
-                <h3>Sushirullen</h3>
-                <h4 class="pay">200 mk</h4>
+            <div class="tile">
+                <h3 id="n26">Sushirullen</h3>
+                <h4 class="pay" id="t26">200 mk</h4>
             </div>                          
-            <div class="tile" id="t25">
-                <h3>Thai fast</h3>
-                <h4 class="pay">220 mk</h4>
+            <div class="tile">
+                <h3 id="n27">Thai fast</h3>
+                <h4 class="pay" id="t27">220 mk</h4>
             </div>  
-            <div class="tile" id="t26">
+            <div class="tile">
                 <h3>Beslut av</h3>
                 <h4>Elevrådet</h4>
             </div>                          
-            <div class="tile" id="t27">
-                <h3>Asa sushi</h3>
-                <h4 class="pay">240 mk</h4>
+            <div class="tile">
+                <h3 id="n29">Asa sushi</h3>
+                <h4 class="pay" id="t29">240 mk</h4>
             </div>      
         </div>
         <div class="tileb" id="b3">
@@ -152,79 +161,79 @@
             <h2>Parkering</h2>
         </div>
         <div class="row" id="r1">
-            <div class="tile" id="t18">
-                <h3 class="pay">Betala 100 mk</h3>
-                <h3>Efter kl 13.15</h3>
+            <div class="tile">
+                <h3 class="pay" id="t19">Betala 100 mk</h3>
+                <h3 id="n19">Efter kl 13.15</h3>
             </div>      
-            <div class="tile" id="t17">
-                <h4 class="pay">120 mk</h4>
-                <h3>La Grande</h3>
+            <div class="tile">
+                <h4 class="pay" id="t18">120 mk</h4>
+                <h3 id="n18">La Grande</h3>
             </div>                                 
-            <div class="tile" id="t16">
+            <div class="tile">
                 <p></p>
                 <h3>Studiedag</h3>
             </div> 
-            <div class="tile" id="t15">
-                <h4 class="pay">100 mk</h4>
-                <h3>Sabbatsberg Busstation</h3>
+            <div class="tile">
+                <h4 class="pay" id="t16">100 mk</h4 >
+                <h3 id="n17">Sabbatsberg Busstation</h3>
             </div>  
-            <div class="tile" id="t14">
-                <h4 class="pay">110 mk</h4>
-                <h3>Quattro</h3>
+            <div class="tile">
+                <h4 class="pay" id="t15">110 mk</h4>
+                <h3 id="n15">Quattro</h3>
             </div>                          
-            <div class="tile" id="t13">
-                <h4 class="pay">100 mk</h4>
-                <h3>Mama Mia</h3>
+            <div class="tile">
+                <h4 class="pay" id="t14">100 mk</h4>
+                <h3 id="n14">Mama Mia</h3>
             </div>  
-            <div class="tile" id="t12">
+            <div class="tile">
                 <h4>Elevrådet</h4>
                 <h3>Beslut av</h3>
             </div>                          
-            <div class="tile" id="t11">
-                <h4 class="pay">70 mk</h4>
-                <h3>Falafel</h3>
+            <div class="tile">
+                <h4 class="pay" id="t12">70 mk</h4>
+                <h3 id="n12">Falafel</h3>
             </div>  
-            <div class="tile" id="t10">
-                <h4 class="pay">60 mk</h4>
-                <h3>Kebab</h3>
+            <div class="tile">
+                <h4 class="pay" id="t11">60 mk</h4>
+                <h3 id="n11">Kebab</h3>
             </div>                            
         </div>
         <div class="row" id="r4">
-            <div class="tile" id="t9">
-                <h3>Subway Odenplan</h3>
-                <h4 class="pay">50 mk</h4>
+            <div class="tile">
+                <h3 id="n9">Subway Odenplan</h3>
+                <h4 class="pay" id="t9">50 mk</h4>
             </div>
-            <div class="tile" id="t8">
-                <h3>Subway St:eriksplan</h3>
-                <h4 class="pay">40 mk</h4>
+            <div class="tile">
+                <h3 id="n8">Subway St:eriksplan</h3>
+                <h4 class="pay" id="t8">40 mk</h4>
             </div>                                 
-            <div class="tile" id="t7">
-                <h3>Busstation Stadsbibl.</h3>
-                <h4 class="pay">100 mk</h4>
+            <div class="tile">
+                <h3 id="n7">Busstation Stadsbibl.</h3>
+                <h4 class="pay" id="t7">100 mk</h4>
             </div> 
-            <div class="tile" id="t6">
-                <h3>Subway Hötorget</h3>
-                <h4 class="pay">35 mk</h4>
+            <div class="tile">
+                <h3 id="n6">Subway Hötorget</h3>
+                <h4 class="pay" id="t6">35 mk</h4>
             </div>  
             <div class="tile" id="t5">
                 <h3>Beslut av</h3>
                 <h3>Elevrådet</h3>
             </div>                       
-            <div class="tile" id="t4">
-                <h3>Frasser RIP</h3>
-                <h4 class="pay">30 mk</h4>
+            <div class="tile">
+                <h3 id="n4">Frasser RIP</h3>
+                <h4 class="pay" id="t4">30 mk</h4>
             </div>   
             <div class="tile" id="t3">
                 <h3>Studiedag</h3>
                 <h4></h4>
             </div>                          
-            <div class="tile" id="t2">
-                <h3>Donken</h3>
-                <h4 class="pay">25 mk</h4>
+            <div class="tile">
+                <h3 id="n2">Donken</h3>
+                <h4 class="pay" id="t2">25 mk</h4>
             </div>  
-            <div class="tile" id="t1">
-                <h3>BK</h3>
-                <h4 class="pay">20 mk</h4>
+            <div class="tile">
+                <h3 id="n1">BK</h3>
+                <h4 class="pay" id="t1">20 mk</h4>
             </div>                          
         </div>
         <div class="tileb" id="b4">
