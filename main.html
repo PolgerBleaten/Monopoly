@@ -14,19 +14,20 @@
             <div class="info">
                 <div class="dice">
                     <button data-rolldicebutton>Rulla tärningen!</button>
-                    <div></div>
+                    <div id="dicefaces"></div>
                 </div>
                 <div class="name">
                     <h2 id="playerinfo"></h2>
-                    <button data-buystreetbutton>Köp!</button>
-                    <button data-donotbuystreetbutton>Köp inte!</button>
+                    <div>
+                        <button data-buystreetbutton>Köp!</button>
+                        <button data-donotbuystreetbutton>Köp inte!</button>
+                    </div>
                     <h2 id="dice"></h2>
                     <h2 id="round"></h2>
-                    <h2 id="tilevalue"></h2>
                 </div>
             </div>
             <div class="name">            
-                <h1>MatkortsMonopol</h1>
+                <h1 id="title">MATKORTSMONOPOL</h1>
             </div>
             <div class="players">
                 <div>
@@ -72,11 +73,11 @@
             </div>
         </div>
         <div class="tileb" id="b1">
-            <h2>Gratis</h2>
+            <h2 id="n20">Gratis</h2>
             <h2>Dammning</h2>
         </div>
         <div class="tileb" id="b2">
-            <h2>Lärforum</h2>
+            <h2 id="n10">Lärforum</h2>
         </div>
         <div class="row" id="r3">
             <div class="tile">
@@ -85,7 +86,7 @@
             </div>      
             <div class="tile">
                 <h4>Elevrådet</h4>
-                <h3>Beslut av</h3>
+                <h3 id="n32">Beslut av</h3>
             </div>
             <div class="tile">
                 <h4 class="pay" id="t33">290 mk</h4>
@@ -101,7 +102,7 @@
             </div>                                 
             <div class="tile">
                 <h4 class="pay" id="t36"></h4>
-                <h3>Studiedag</h3>
+                <h3 id="n36">Studiedag</h3>
             </div> 
             <div class="tile">
                 <h4 class="pay" id="t37">360 mk</h4>
@@ -109,13 +110,12 @@
             </div>  
             <div class="tile">
                 <h3 class="pay" id="t38">Betala 100 mk</h3>
-                <h3>Efter kl 13.15</h3>
+                <h3 id="n38">Efter kl 13.15</h3>
             </div>                          
             <div class="tile">
                 <h4 class="pay" id="t39">400 mk</h4>
                 <h3 id="n39">ICA</h3>
-            </div>                      
-                      
+            </div>                                     
         </div>
         <div class="row" id="r2">
             <div class="tile">
@@ -127,7 +127,7 @@
                 <h4 class="pay" id="t22">160 mk</h4>
             </div>
             <div class="tile">
-                <h3 id="t23">Studiedag</h3>
+                <h3 id="n23">Studiedag</h3>
                 <p></p>
             </div>                                 
             <div class="tile">
@@ -147,7 +147,7 @@
                 <h4 class="pay" id="t27">220 mk</h4>
             </div>  
             <div class="tile">
-                <h3>Beslut av</h3>
+                <h3 id="n28">Beslut av</h3>
                 <h4>Elevrådet</h4>
             </div>                          
             <div class="tile">
@@ -157,7 +157,7 @@
         </div>
         <div class="tileb" id="b3">
             <h2>F varning</h2>
-            <h3>Gå till lärforum</h3>
+            <h3 id="n30">Gå till lärforum</h3>
         </div>
         <div class="row" id="r1">
             <div class="tile">
@@ -170,11 +170,11 @@
             </div>                                 
             <div class="tile">
                 <p></p>
-                <h3>Studiedag</h3>
+                <h3 id="n17">Studiedag</h3>
             </div> 
             <div class="tile">
                 <h4 class="pay" id="t16">100 mk</h4 >
-                <h3 id="n17">Sabbatsberg Busstation</h3>
+                <h3 id="n16">Sabbatsberg Busstation</h3>
             </div>  
             <div class="tile">
                 <h4 class="pay" id="t15">110 mk</h4>
@@ -186,7 +186,7 @@
             </div>  
             <div class="tile">
                 <h4>Elevrådet</h4>
-                <h3>Beslut av</h3>
+                <h3 id="n13">Beslut av</h3>
             </div>                          
             <div class="tile">
                 <h4 class="pay" id="t12">70 mk</h4>
@@ -215,7 +215,7 @@
                 <h4 class="pay" id="t6">35 mk</h4>
             </div>  
             <div class="tile" id="t5">
-                <h3>Beslut av</h3>
+                <h3 id="n5">Beslut av</h3>
                 <h3>Elevrådet</h3>
             </div>                       
             <div class="tile">
@@ -223,7 +223,7 @@
                 <h4 class="pay" id="t4">30 mk</h4>
             </div>   
             <div class="tile" id="t3">
-                <h3>Studiedag</h3>
+                <h3 id="n3">Studiedag</h3>
                 <h4></h4>
             </div>                          
             <div class="tile">
@@ -237,7 +237,7 @@
         </div>
         <div class="tileb" id="b4">
             <h2>Start</h2>
-            <h3>150 mk per passering</h3>
+            <h3 id="n0">150 mk per passering</h3>
         </div>
     </main>
     <footer></footer>
