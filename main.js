@@ -12,12 +12,13 @@ document.querySelectorAll("[player]").forEach(item => {
         s.preventDefault();
     })
   })
-var Player1 = ["", 550, "", 0, 0];
-var Player2 = ["", 550, "", 0, 0];
+var Player1 = ["", 1500, "", 0, 0];
+var Player2 = ["", 1500, "", 0, 0];
 let turn = 0;
 BuyButton.addEventListener("click", tryPay);
 NotBuyButton.addEventListener("click", hideButton);
 NotBuyButton.addEventListener("click", hideInfo)
+NotBuyButton.addEventListener("click", showDice)
 DiceButton.addEventListener("click", rollDice);
 function updatePlayers(){
     document.getElementById("Steps1").innerHTML = Player1[3];
@@ -127,6 +128,9 @@ function createPlayer(person){
 function hideDice(){
     DiceButton.style.display = "none"
 }
+function showDice(){
+    DiceButton.style.display = "initial"
+}
 function hideButton(){
     BuyButton.style.display = "none";
     NotBuyButton.style.display = "none";
@@ -136,6 +140,7 @@ function showButton(){
     NotBuyButton.style.display = "initial";
 }
 function buyStreet(){
+    hideDice()
     BuyButton.removeEventListener("click", buyStreet)
     BuyButton.addEventListener("click", tryPay)
     if (getPlayer() == 1){
@@ -167,6 +172,7 @@ function buyStreet(){
     }
     else if(tile == 5 || tile == 13 || tile == 28 || tile == 32)
     {
+        showDice()
         let character = "";
         let event = Math.floor(Math.random() * 4) + 1;
         if (event == 1)
@@ -201,6 +207,7 @@ function buyStreet(){
     }
     else if(tile == 19 || tile == 38)
     {
+        showDice()
         info.innerHTML = "Matkorten gick ut! Du förlorade 100 matkort.";
         if (getPlayer() == 1)
         {
@@ -212,7 +219,6 @@ function buyStreet(){
     }
     else if(tile == 3 || tile == 17 || tile == 23 || tile == 36)
     {
-        addPiece()
         var random = Math.floor(Math.random() * 3) + 1;
         if(random == 1 || random == 2){
             if(random == 1){
@@ -291,6 +297,7 @@ function getTile(){
     }
 }
 function getOwner(tile){
+    showDice()
     price = parseInt(getPrice(tile))/5
     color = ""
     var streetname = document.getElementById("n" + tile).innerHTML
@@ -311,6 +318,7 @@ function getOwner(tile){
         else{
             info.innerHTML = "Du förlorade " + price + " matkort när du damma på " + streetname;
             Player2[1] -= price
+            Player1[1] += price
         }
     }
     else if (color == "(255, 0, 0)"){
@@ -320,9 +328,11 @@ function getOwner(tile){
         else{
             info.innerHTML = "Du förlorade " + price + " matkort när du damma på " + streetname;
             Player1[1] -= price
+            Player2[1] += price
         }
     }
     else{
+        hideDice()
         price *= 5
         streetButton("Köp!", "Köp inte!", true)
         info.innerHTML = "Vill du köpa " + streetname + " för " + price + " matkort?";
@@ -331,6 +341,7 @@ function getOwner(tile){
 }
 function tryPay()
 {
+    showDice()
     if (getPlayer() == 1) {
         if(Player1[4] > 0){
             if(checkMoney(50) == true){
@@ -411,7 +422,6 @@ function checkMoney(money){
         }
     }
 }
-
 function addPiece(){
     var img = new Image()
     img.src = getPiece()
@@ -427,6 +437,7 @@ function addPiece(){
     document.getElementById("n" + tile).appendChild(img);
 }
 function removeImage(turn){
+    alert("top ten")
     if(document.getElementById("image1") && turn > 2 && turn%2 == 1){
         document.getElementById("image1").remove()
     }
