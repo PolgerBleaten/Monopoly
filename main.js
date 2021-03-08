@@ -153,6 +153,7 @@ function buyStreet(){
     {
         if (tile == 0){
             info.innerHTML = "Du passerade start.";
+            showDice()
         }
         else if (tile == 10 || tile == 30){
             if(getPlayer() == 1){
@@ -168,6 +169,7 @@ function buyStreet(){
         }
         else{
             info.innerHTML = "Du dammade gratis";
+            showDice()
         }
     }
     else if(tile == 5 || tile == 13 || tile == 28 || tile == 32)
