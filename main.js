@@ -437,7 +437,6 @@ function addPiece(){
     document.getElementById("n" + tile).appendChild(img);
 }
 function removeImage(turn){
-    alert("top ten")
     if(document.getElementById("image1") && turn > 2 && turn%2 == 1){
         document.getElementById("image1").remove()
     }
